@@ -1,0 +1,76 @@
+[
+    
+        {
+            "question": "Do you have cough?",
+            "optionA": "Yes",
+            "optionB": "No"
+        },
+
+        {
+            "question": "Do you have cold?",
+            "optionA": "Yes",
+            "optionB": "No"
+        },
+    
+       
+        {
+            "question": "Do you having Diarhea?",
+            "optionA": "Yes",
+            "optionB": "No"
+        },
+
+        {
+            "question": "Do you have sore throat?",
+            "optionA": "Yes",
+            "optionB": "No"
+        },
+
+        {
+            "question": "Are you experiencing MYALGIA or Body Aches?",
+            "optionA": "Yes",
+            "optionB": "No"
+        },
+
+        {
+            "question": "Do you have Headache?",
+            "optionA": "Yes",
+            "optionB": "No"
+        },
+
+        {
+            "question": "Do you have fever (Temperature 37.8C and above?",
+            "optionA": "Yes",
+            "optionB": "No"
+        },
+
+        {
+            "question": "Are you having difficulty breathing?",
+            "optionA": "Yes",
+            "optionB": "No"
+        },
+
+        {
+            "question": "Are you experiencing Fatigue?",
+            "optionA": "Yes",
+            "optionB": "No"
+        },
+
+        {
+            "question": "Have you travelled recently during the past 14days?",
+            "optionA": "Yes",
+            "optionB": "No"
+        },
+    
+        {
+            "question": "Do you have a travel history to a COVID-19 INFESTED AREA?",
+            "optionA": "Yes",
+            "optionB": "No"
+        },
+    
+        {
+            "question": "Do you have direct contact or is taking care of a postive C0VID-19 PATIENT?",
+            "optionA": "Yes",
+            "optionB": "No"
+        }
+    
+]
