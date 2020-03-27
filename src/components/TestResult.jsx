@@ -29,7 +29,7 @@ export const TestResult = () => {
     
     return (
         <div>
-                <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                <div class="max-w-sm rounded my-6 overflow-hidden shadow-lg">
   <img class="w-full" src={covid} alt="result"/>
   <div class="px-6 py-4">
     <div class="font-bold text-xl mb-2">Your Points: {state.points} out of 24points possible </div>
