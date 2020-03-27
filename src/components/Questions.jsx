@@ -1,15 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Button } from './Button';
 
 
-const Questions = ({title}) => {
+
+const Questions = ({title, pics, score }) => {
+       
     return (
           <div className="max-w-sm rounded overflow-hidden shadow-lg">
+               <img className="w-full" src={pics} alt="images"/>
                  <div className="px-6 py-4">
+                     {score}
           <div  className="font-bold text-xl mb-2">{title}</div>
         </div>
         <div className="px-6 py-4">
-         <Button />
+         <Button score={score} />
       </div>
 
 </div>

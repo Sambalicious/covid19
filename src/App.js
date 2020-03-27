@@ -1,19 +1,20 @@
 import React, {useReducer} from 'react';
 import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import UIfx from 'uifx';
+
 import { Header } from './components/Header';
 import { Test } from './components/Test';
 import { TestResult } from './components/TestResult';
-import button from '../src/utils/button-sound.mp3'
-
-
-const sound = new UIFx({asset: button});
+import button from '../src/utils/button-sound.mp3';
 
 
 
-playbtn = ()=>{
-  sound.play
-}
+
+
+
+
+
+
+
 
 
 export const GlobalContext = React.createContext()
@@ -39,8 +40,8 @@ function App() {
     }
   }
   
-  const handleYesBtn =({number = 3}) => {
-      playbtn()
+  const handleYesBtn =(number) => {
+     
     dispatch({
       type: 'YES_BTN',
       payload: number
@@ -50,7 +51,7 @@ function App() {
   }
   
   const handleNoBtn = ()=> {
-    playbtn()
+   
     dispatch({
       type: 'NO_BTN'
 
