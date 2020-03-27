@@ -5,7 +5,7 @@ import { Link} from 'react-router-dom';
 
 
 import cold from '../utils/images/cold.jpeg';
-import cough from '../utils/images/cold.jpeg';
+import cough from '../utils/images/cough.jpeg';
 import breathing from '../utils/images/breathing.jpeg';
 import contact from '../utils/images/contact.jpeg';
 import diarrhea from '../utils/images/diarrhea.jpeg';
