@@ -1,12 +1,19 @@
 import React, {useReducer} from 'react';
 import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import UIfx from 'uifx';
 import { Header } from './components/Header';
 import { Test } from './components/Test';
 import { TestResult } from './components/TestResult';
+import button from '../src/utils/button-sound.mp3'
+
+
+const sound = new UIFx({asset: button});
 
 
 
-
+playbtn = ()=>{
+  sound.play
+}
 
 
 export const GlobalContext = React.createContext()
@@ -19,33 +26,34 @@ function App() {
   
   
   const reducer =(state, action) =>{
+      
     switch (action.type) {
       case 'YES_BTN': return{
-        ...state, points: state.points + 1
+        ...state, points: state.points + action.payload
       }
   
       case 'NO_BTN': return{
         ...state
       }
-        
-        break;
-    
       default: return state
-        break;
     }
   }
   
-  const handleYesBtn = ()  => {
+  const handleYesBtn =({number = 3}) => {
+      playbtn()
     dispatch({
       type: 'YES_BTN',
-      payload: 1
+      payload: number
+      
     })
   
   }
   
   const handleNoBtn = ()=> {
+    playbtn()
     dispatch({
-      type: 'NO_BTN',
+      type: 'NO_BTN'
+
       
     })
   
