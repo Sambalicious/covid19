@@ -8,7 +8,7 @@ export const Header = () => {
    
     return (
        
-         <div className="max-w-sm rounded overflow-hidden shadow-lg">
+         <div className="max-w-sm rounded my-6 overflow-hidden shadow-lg">
            <img className="w-full" src={covid} alt="images" />
         <div className="px-6 py-4">
           <div className="font-bold text-green-500 text-4xl mb-2">
