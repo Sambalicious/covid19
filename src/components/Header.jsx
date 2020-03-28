@@ -15,7 +15,7 @@ const Header = () => {
             Due to limited Test kit needed to combat COVID-19, we made this App to provide you with a means of self examining yourself before contacting NCDC.
           </p>
           <h4 className="font-bold text-green-500 text-xl mb-2"> We gat you.</h4>
-          <p>it will only take a moment to answer some to our questions so as to provide you with best analysis provided by NDCDC guidelines</p>
+          <p>it will only take a moment to answer some to our questions so as to provide you with best analysis provided by NCDC guidelines</p>
         </div>
        
      
@@ -24,7 +24,7 @@ const Header = () => {
        <div className="max-w-sm rounded overflow-hidden shadow-lg">
      
        <div className="flex items-center justify-between">
-         <Link to="/test" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+         <Link to="/test" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mx-6 rounded focus:outline-none focus:shadow-outline" type="button">
            Proceed
          </Link>
          

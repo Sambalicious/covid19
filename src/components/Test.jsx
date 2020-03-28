@@ -47,7 +47,7 @@ const Test = () => {
            
        </div>
        <div className="max-w-sm rounded overflow-hidden shadow-lg">
-         <Link to="/result" className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+         <Link to="/result" className="bg-green-500 mx-6 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
            Proceed to Result
          </Link>
          </div>

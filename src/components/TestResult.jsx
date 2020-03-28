@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useCallback} from 'react';
 import {Link} from 'react-router-dom';
 
 import { GlobalContext  } from '../App';
@@ -13,11 +13,15 @@ const TestResult = () => {
 
     
     let remark;
-        if (score > 0 && score <= 2 ){
-            remark ='Perhaps maybe you are just stressed';
+
+        if (score === 0){
+            remark = 'You are good. stay safe!'
+        }
+        else if (score > 0 && score <= 2 ){
+            remark ='Perhaps you are just stressed, rest well and Stay safe';
         }
         else if (score > 2 && score <= 5){
-            remark = 'Hydrate properly and pratice proper personal hygiene. Obeserve and revaluate after 2days';
+            remark = 'Hydrate properly and pratice proper personal hygiene. Observe and revaluate after 2days';
         } else if(score > 5 && score <= 12 ){
             remark = 'Seek consultation with a medical Doctor';
         }
@@ -39,7 +43,7 @@ const TestResult = () => {
 
     </div>
        <div className="max-w-sm rounded overflow-hidden shadow-lg">
-         <Link to="/" className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+         <Link to="/" className="bg-green-500 mx-4 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
            Retake Test
          </Link>
          </div>
