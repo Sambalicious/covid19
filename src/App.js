@@ -31,7 +31,7 @@ function App() {
   }
   
   const handleYesBtn =(score) => {
-     
+    navigator.vibrate(200);
     dispatch({
       type: 'YES_BTN',
       payload: score
@@ -40,7 +40,7 @@ function App() {
   }
   
   const handleNoBtn = ()=> {
-        
+    navigator.vibrate(200);
     dispatch({
       type: 'NO_BTN'
     })

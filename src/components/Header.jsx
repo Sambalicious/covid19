@@ -31,7 +31,7 @@ const Header = () => {
        </div>
 
      <p className="text-center text-gray-500 text-xs">
-       &copy;2020 E-SAM. All rights reserved.
+       &copy;2020 Samuel Ayegbusi. All rights reserved.
      </p>
    </div>       
           </Fragment>
