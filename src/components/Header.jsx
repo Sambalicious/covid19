@@ -12,7 +12,7 @@ const Header = () => {
               COVID-19 Tracker
           </div>
           <p className="text-gray-700 text-base">
-           Do you feel different and you are curios to know your COVID-19 status? 
+            Due to limited Test kit needed to combat COVID-19, we made this App to provide you with a means of self examining yourself before contacting NCDC.
           </p>
           <h4 className="font-bold text-green-500 text-xl mb-2"> We gat you.</h4>
           <p>it will only take a moment to answer some to our questions so as to provide you with best analysis provided by NDCDC guidelines</p>
