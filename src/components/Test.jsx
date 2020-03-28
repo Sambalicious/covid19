@@ -25,7 +25,7 @@ import throat from '../utils/images/throat.jpeg';
 
 
 
-export const Test = () => {
+const Test = () => {
     return (
         <div className="max-w-sm rounded overflow-hidden shadow-lg">
           <div className="px-6 py-4">
@@ -54,3 +54,5 @@ export const Test = () => {
         </div>
     )
 }
+
+export default Test;

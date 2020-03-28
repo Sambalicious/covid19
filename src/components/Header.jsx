@@ -1,14 +1,11 @@
-import React, {Fragment, useState} from 'react';
+import React, {Fragment} from 'react';
 import { Link } from 'react-router-dom';
 import covid from '../utils/images/covid.jpeg';
-export const Header = () => {
-
-   
-
-   
+const Header = () => {
+  
     return (
        
-         <div className="max-w-sm rounded my-6 overflow-hidden shadow-lg">
+         <div className="max-w-sm rounded my-4 overflow-hidden shadow-lg">
            <img className="w-full" src={covid} alt="images" />
         <div className="px-6 py-4">
           <div className="font-bold text-green-500 text-4xl mb-2">
@@ -41,3 +38,5 @@ export const Header = () => {
     </div>
     )
 }
+
+export default Header

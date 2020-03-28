@@ -3,7 +3,7 @@ import React, {useContext} from 'react';
 import { GlobalContext  } from '../App';
 import covid from '../utils/covid.jpeg'
 
-export const TestResult = () => {
+const TestResult = () => {
     const {state} = useContext(GlobalContext);
     console.log(state);
 
@@ -11,7 +11,7 @@ export const TestResult = () => {
     
 
     
-    let stat, remark;
+    let remark;
         if (score > 0 && score <= 2 ){
             remark ='Perhaps maybe you are just stressed';
         }
@@ -29,20 +29,22 @@ export const TestResult = () => {
     
     return (
         <div>
-                <div class="max-w-sm rounded my-6 overflow-hidden shadow-lg">
-  <img class="w-full" src={covid} alt="result"/>
-  <div class="px-6 py-4">
-    <div class="font-bold text-xl mb-2">Your Points: {state.points} out of 24points possible </div>
-    <p class="text-gray-700 text-base"> Recommendations: {remark}
+                <div className="max-w-sm rounded my-4 overflow-hidden shadow-lg">
+  <img className="w-full" src={covid} alt="result"/>
+  <div className="px-6 py-4">
+    <div className="font-bold text-xl mb-2">Your Points: {state.points} out of 24 points possible </div>
+    <p className="text-gray-700 text-base"> Recommendations: {remark}
       
     </p>
   </div>
-  <div class="px-6 py-4">
-    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">Adapted from DOH Guidelines</span>
-   <a href="https://www.doh.gov.ph" > <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">www.doh.gov.ph</span>
+  <div className="px-6 py-4">
+    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">Adapted from DOH Guidelines</span>
+   <a href="https://www.doh.gov.ph" > <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">www.doh.gov.ph</span>
    </a>    
   </div>
 </div>
         </div>
     )
 }
+
+export default TestResult;

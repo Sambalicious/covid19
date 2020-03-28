@@ -1,23 +1,13 @@
-import React, {useReducer} from 'react';
+import React, {useReducer, lazy, Suspense} from 'react';
 import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-
-import { Header } from './components/Header';
-import { Test } from './components/Test';
-import { TestResult } from './components/TestResult';
-import button from '../src/utils/button-sound.mp3';
+const  Header = lazy(()=> import('./components/Header'));
+const Test = lazy(()=> import('./components/Test'));
+const TestResult = lazy(()=> import('./components/TestResult'));
 
 
 
+export const GlobalContext = React.createContext();
 
-
-
-
-
-
-
-
-
-export const GlobalContext = React.createContext()
 
 function App() {
 
@@ -40,22 +30,19 @@ function App() {
     }
   }
   
-  const handleYesBtn =(number) => {
+  const handleYesBtn =(score) => {
      
     dispatch({
       type: 'YES_BTN',
-      payload: number
-      
+      payload: score
     })
   
   }
   
   const handleNoBtn = ()=> {
-   
+        
     dispatch({
       type: 'NO_BTN'
-
-      
     })
   
   }
@@ -67,10 +54,11 @@ function App() {
       <GlobalContext.Provider value={{state, dispatch, handleYesBtn, handleNoBtn}}>
       <Router>
         <Switch>
+          <Suspense fallback={<div className="spinner"><h3>Loading...</h3></div>} >
           <Route path="/" exact component={Header} />
           <Route path="/test" exact component={Test}/>
           <Route path='/result' exact component={TestResult} />
-
+          </Suspense>
         </Switch>
       </Router>
       </GlobalContext.Provider>

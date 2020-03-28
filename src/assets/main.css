@@ -10922,15 +10922,14 @@ video {
   position: absolute;
   top:50%;
   left: 50%;
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
   margin-top: -30px;
   margin-left: -30px;
   border-radius: 50%;
-  border: 2px solid transparent;
-  border-top-color: limegreen;
-  border-bottom-color: limegreen;
-  animation: spinner 0.7s ease infinite;
+  border-top: 2px solid limegreen;
+  border-right: 2px solid transparent;
+  animation: spinner 0.7s linear infinite;
 }
 
 div .spinner h3{
